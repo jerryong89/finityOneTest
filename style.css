@@ -240,6 +240,34 @@ body{
 .calendarColor{
   color:#776fc6
 }
+
+.purpleBackground{
+  background-color: #766fe7;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+.purpleBackground{
+  background-color: #766fe7;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+.iconCenterVertical{
+  display: flex;
+  align-items: center;
+}
+
+.colorWhite{
+display: inline;
+align-self: center;
+  color: white;
+}
+
 /* .mainContainer{
   height:100%
 } */
