@@ -6,8 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
     integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="style.css">
   <title>Finity One Mock Up</title>
 </head>
@@ -15,41 +26,63 @@
 <body>
   <div class="container col-12">
     <div class="row">
-
       <div class="leftSide col-2">
-        <div class="firstChild row">Visito</div>
-        <br>
-        <div class="row">John Doe and email</div>
-        <br>
-        <div class="row">DashBoard</div>
-        <br>
-        <div class="row">Traveling Plan</div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="fas fa-plane-departure"></i> My
-            Trip</button></div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="fas fa-clipboard-list"></i> My
-            Plan</button></div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="far fa-clock"></i> Upcoming</button>
+        <div class="firstChild row">
+          <div class=""><img class="logo" src="assets/logo.png" alt=""></div>Visito
         </div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="far fa-calendar-alt"></i>
+        <br>
+        <div class="row">
+          <img class="logoLeftCorner" src="assets/logo.png" alt="">
+          <div class="column">
+            <div class=" boldText">John Doe</div>
+            <div class="emailColor">johndoe@mail.com</div>
+          </div>
+        </div>
+        <br>
+        <div class="dropdown show">
+          <a class="btn purpleGradient dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-home"></i> Dashboard
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <br>
+        <div class="row boldText">Traveling Plan</div>
+        <div class="row"><button type="button" class="btn"><i class="fas fa-plane-departure"></i> My
+            Trip</button></div>
+        <div class="row"><button type="button" class="btn"><i class="fas fa-clipboard-list"></i> My
+            Plan</button></div>
+        <div class="row"><button type="button" class="btn"><i class="far fa-clock"></i> Upcoming</button>
+        </div>
+        <div class="row"><button type="button" class="btn"><i class="far fa-calendar-alt"></i>
             Calendar</button></div>
         <br>
-        <div class="row">Traveling Management</div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="fas fa-bus"></i> Journey ></button></div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="fas fa-wallet"></i> Budget</button></div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="far fa-credit-card"></i> Payment
-            ></button></div>
-        <div class="row"><button type="button" class="btn btn-light"><i class="far fa-hourglass"></i> History</button>
+        <div class="row boldText">Traveling Management</div>
+        <div class="row"><button type="button" class="btn "><i class="fas fa-bus"></i> Journey ></button></div>
+        <div class="row"><button type="button" class="btn"><i class="fas fa-wallet"></i> Budget</button></div>
+        <div class="row"><button type="button" class="btn"><i class="far fa-credit-card"></i> Payment ></button></div>
+        <div class="row"><button type="button" class="btn"><i class="far fa-hourglass"></i> History</button>
+          <div><img class="col-12 palm" src="assets/palm.jpg" alt=""></div>
         </div>
       </div>
 
-      <div class="column col-10">
+      <div class="mainContainer column col-10">
 
-        <form class="searchBar" action="">
+        <form class="searchBar " action="">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
             </div>
-            <input name="name" class="form-control" placeholder="Search..." aria-label="Name" aria-describedby="basic-addon1">
+            <input name="name" class="form-control" placeholder="Search..." aria-label="Name"
+              aria-describedby="basic-addon1">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">English <i class="far fa-bell"></i> <i class="far fa-envelope"></i></span>
+            </div>
           </div>
         </form>
 
@@ -58,37 +91,88 @@
             <div class="topContainer col-12 row">
 
               <div class="bodyTop col-4 row">
-                <div>img</div>
-                <div class="column">
-                  <div>$600</div>
+                <div class="topLeftBody"><i class="fas fa-dollar-sign"></i></div>
+                <div class="col-8 column">
+                  <div class="boldText">$600</div>
                   <div>Total Revenue</div>
                 </div>
-                <div>...</div>
+                <div class="col-1">...</div>
               </div>
 
               <div class="bodyTop col-4 row">
-                <div>img</div>
+                <div class="topMiddleBody"><i class="fas fa-shopping-bag"></i></div>
                 <div class="column">
-                  <div>$2,500</div>
+                  <div class="boldText">$2,500</div>
                   <div>Total Cost</div>
                 </div>
                 <div>...</div>
               </div>
 
               <div class="bodyTop col-4 row">
-                <div>img</div>
+                <div class="topRightBody"><i class="fas fa-gift"></i></div>
                 <div class="column">
-                  <div>$200</div>
+                  <div class="boldText">$200</div>
                   <div>Total Bonus</div>
                 </div>
                 <div>...</div>
               </div>
 
             </div>
-            <div>map</div>
+            <div class="column myTrip">
+              <h4>My Trip</h4>
+              <div><img src="" alt=""></div>
+              <div class="tripInfo row">
+                <div><i class="far fa-calendar-alt"></i> 25th May</div>
+                <div>From: Peru</div>
+                <div>To: Mongolia</div>
+                <div>SouthWest Airlines</div>
+              </div>
+
+            </div>
             <div>graph</div>
           </div>
-          <div class="rightSide col-3 column">Upcoming Trip</div>
+
+          <div class="rightSide col-3 column">
+            <h4 class="tripTitle">Upcoming Trip</h4>
+            <div class="rightBody row">
+              <div>img</div>
+              <div class="column">
+                <div>France</div>
+                <div>25 May - 30 May</div>
+              </div>
+              <div>...</div>
+            </div>
+
+            <div class="rightBody row">
+              <div>img</div>
+              <div class="column">
+                <div>Italy</div>
+                <div>10 Jun - 20 Jun</div>
+              </div>
+              <div>...</div>
+            </div>
+
+            <div class="rightBody row">
+              <div>img</div>
+              <div class="column">
+                <div>Singapore</div>
+                <div>20 Aug - 30 Aug</div>
+              </div>
+              <div>...</div>
+            </div>
+
+            <div class="rightBody row">
+              <div>img</div>
+              <div class="column">
+                <div>Malaysia</div>
+                <div>15 Sep - 20 May</div>
+              </div>
+              <div>...</div>
+            </div>
+
+            <h4 class="middleTitle">Activity</h4>
+          </div>
+
         </div>
 
       </div>
