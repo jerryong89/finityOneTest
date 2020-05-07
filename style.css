@@ -35,3 +35,21 @@ body{
 .leftSide > *{
   margin-left: 2%;
 }
+
+.firstChild{
+  margin-top: 7%;
+}
+
+.searchBar{
+  margin-top:1%;
+  margin-left:1%;
+  margin-right: 1%;
+}
+
+.searchInput{
+  border-radius: 5px;
+  border-width: 1px;
+  -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.33);
+  box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.33);
+}
