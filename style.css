@@ -12,7 +12,7 @@ body{
   -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.33);
   -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.33);
   box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.33);
-  height: 100vh;
+  height: 945px;
 }
 
 .leftSide > *{
@@ -44,7 +44,7 @@ body{
 }
 
 .palm{
-  margin-top: 80px;
+  margin-top: 180px;
   display: flex;
   align-items: flex-end;
 }
@@ -53,6 +53,51 @@ body{
   margin-top:1%;
   margin-left:1%;
   margin-right: 1%;
+
+}
+
+.searchInput{
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px
+}
+
+.searchIconsLeft {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: .25rem 0px 0px .25rem;
+    border-right:  0px;
+}
+
+.searchIconsRight {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 0px .25rem .25rem 0px;
+    border-left:  0px;
 }
 
 .bodyContainer{
@@ -120,7 +165,7 @@ body{
 
 .rightBody{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.49);
@@ -144,6 +189,11 @@ body{
   margin-top: 50px;
 }
 
+.planeTitle{
+  padding-top: 7px;
+  margin-left: 1%
+}
+
 .myTrip {
   margin-top: 20px;
   margin-left: -15px;
@@ -155,8 +205,272 @@ body{
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.49);
   border-radius: 3px;
 }
-/* @media only screen and (max-width: 1315px) {
-  .leftSide {
-    min-width: 200px;
+
+.bottomRightInfo{
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
+}
+
+.plane{
+ padding-left: 0px;
+ padding-right: 0px;
+}
+
+.graph{
+  margin-top: 20px;
+  margin-left: -15px;
+  margin-right: 15px;
+  background-color: white;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.49);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.49);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.49);
+  border-radius: 3px;
+}
+
+.fromColor{
+  color: #c80b71
+}
+
+.toColor{
+  color: #f1942a
+}
+
+.calendarColor{
+  color:#776fc6
+}
+
+.purpleBackground{
+  background-color: #766fe7;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  margin-top: 6px;
+  margin-right: 15px;
+  font-size: 10px;
+}
+
+.orange{
+  color: orange;
+  font-size: 21px;
+  margin-left: 15px;
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
+.redBackground{
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  margin-top: 6px;
+  margin-right: 15px;
+  font-size: 10px;
+}
+
+.orangeBackground{
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  margin-top: 6px;
+  margin-right: 15px;
+  font-size: 10px;
+}
+
+.greenBackground{
+  background-color: green;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  margin-top: 6px;
+  margin-right: 15px;
+  font-size: 10px;
+}
+
+.iconCenterVertical{
+  display: flex;
+  align-self: center;
+}
+
+.colorWhite{
+  display: inline;
+  align-self: center;
+  color: white;
+}
+
+@media only screen and (max-width: 1438px) {
+  .whole{
+    min-width: 1438px
   }
-} */
+}
+
+.inside {
+	margin-bottom:1em;
+  font:normal 100%/150% arial,helvetica,sans-serif;
+}
+
+.inside caption {
+	font:bold 150%/120% arial,helvetica,sans-serif;
+	padding-bottom:0.33em;
+}
+
+.graph tbody th {
+	text-align:right;
+}
+
+@supports (display:grid) {
+
+	@media (min-width:32em) {
+
+		.inside {
+			display:block;
+      height:200px;
+		}
+
+		.inside caption {
+			display:block;
+		}
+
+		.inside thead {
+			display:none;
+		}
+
+		.inside tbody {
+			position:relative;
+			display:grid;
+			grid-template-columns:repeat(auto-fit, minmax(2em, 1fr));
+			column-gap:2.5%;
+			align-items:end;
+			height:100%;
+			margin:3em 0 1em 2.8em;
+			padding:0 1em;
+			border-bottom:2px solid rgba(0,0,0,0.5);
+			background:repeating-linear-gradient(
+				180deg,
+				rgba(170,170,170,0.7) 0,
+				rgba(170,170,170,0.7) 1px,
+				transparent 1px,
+				transparent 20%
+			);
+		}
+
+		.inside tbody:before,
+		.inside tbody:after {
+			position:absolute;
+			left:-3.2em;
+			width:2.8em;
+			text-align:right;
+			font:bold 80%/120% arial,helvetica,sans-serif;
+		}
+
+		.inside tbody:before {
+			content:"1000";
+			top:-0.6em;
+		}
+
+		.inside tbody:after {
+      content:"0";
+			bottom:-0.6em;
+		}
+
+		.inside tr {
+			position:relative;
+			display:block;
+		}
+
+		.inside tr:hover {
+			z-index:999;
+		}
+
+		.inside th,
+		.inside td {
+			display:block;
+			text-align:center;
+		}
+
+		.inside tbody th {
+			position:absolute;
+			top:-3em;
+			left:0;
+			width:100%;
+			font-weight:normal;
+			text-align:center;
+      white-space:nowrap;
+			text-indent:0;
+			transform:rotate(-45deg);
+		}
+
+		.inside tbody th:after {
+			content:"";
+		}
+
+		.inside td {
+			width:100%;
+			height:100%;
+			background:#F63;
+			border-radius:0.5em 0.5em 0 0;
+			transition:background 0.5s;
+		}
+
+		.inside tr:hover td {
+			opacity:0.7;
+		}
+
+		.inside td span {
+			overflow:hidden;
+			position:absolute;
+			left:50%;
+			top:50%;
+			width:0;
+			padding:0.5em 0;
+			margin:-1em 0 0;
+			font:normal 85%/120% arial,helvetica,sans-serif;
+			font-weight:bold;
+			opacity:0;
+			transition:opacity 0.5s;
+      color:white;
+		}
+
+		.toggleGraph:checked + table td span,
+		.inside tr:hover td span {
+			width:4em;
+			margin-left:-2em; /* 1/2 the declared width */
+			opacity:1;
+		}
+	} /* min-width:32em */
+
+} /* grid only */
+
+.border{
+  border-radius: 3px
+}
+
+.rightMargin{
+  margin-right: 20px;
+}
+
+.city{
+  margin-left: -30px;
+}
+
+.greenDot {
+  background-color: lightgreen;
+  color: white;
+  height: 20px;
+  width: 30px;
+  border-radius: 50px ;
+}

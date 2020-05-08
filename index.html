@@ -24,25 +24,25 @@
 </head>
 
 <body>
-  <div class="container col-12">
+  <div class="whole container col-12">
     <div class="row">
       <div class="leftSide col-2">
         <div class="firstChild row">
-          <div class=""><img class="logo" src="assets/logo.png" alt=""></div>Visito
+          <div class=""><img class="logo" src="assets/logo.png" alt="">&nbsp;&nbsp;</div>Visito
         </div>
         <br>
         <div class="row">
-          <img class="logoLeftCorner" src="assets/logo.png" alt="">
+          <img class="logoLeftCorner" src="assets/jerry.png" alt="" width="50px">
           <div class="column">
             <div class=" boldText">John Doe</div>
             <div class="emailColor">johndoe@mail.com</div>
           </div>
         </div>
         <br>
-        <div class="dropdown show">
-          <a class="btn purpleGradient dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+        <div class="col- 12 dropdown show">
+          <a class=" col-8 btn purpleGradient dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-home"></i> Dashboard
+            <i class="fas fa-home"></i> Dashboard&nbsp;&nbsp;<span class="greenDot">&nbsp;3&nbsp;</span>
           </a>
 
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -76,12 +76,16 @@
         <form class="searchBar " action="">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+              <span class="searchIconsLeft" id="basic-addon1"><i class="fas fa-search"></i></span>
             </div>
-            <input name="name" class="form-control" placeholder="Search..." aria-label="Name"
+            <input name="name" class="searchInput form-control" placeholder="Search..." aria-label="Name"
               aria-describedby="basic-addon1">
             <div class="input-group-append">
-              <span class="input-group-text" id="basic-addon2">English <i class="far fa-bell"></i> <i class="far fa-envelope"></i></span>
+              <span class="searchIconsRight" id="basic-addon2">English&nbsp;<i class="far fa-bell"></i>
+                <div>&nbsp;</div> <i class="far fa-envelope"></i>
+                <div>&nbsp;John Doe &nbsp;</div><img class="logoLeftCorner" src="assets/jerry.png" alt="" height="20px"
+                  width="20x">
+              </span>
             </div>
           </div>
         </form>
@@ -92,11 +96,11 @@
 
               <div class="bodyTop col-4 row">
                 <div class="topLeftBody"><i class="fas fa-dollar-sign"></i></div>
-                <div class="col-8 column">
+                <div class="column">
                   <div class="boldText">$600</div>
                   <div>Total Revenue</div>
                 </div>
-                <div class="col-1">...</div>
+                <div>...</div>
               </div>
 
               <div class="bodyTop col-4 row">
@@ -118,59 +122,145 @@
               </div>
 
             </div>
-            <div class="column myTrip">
-              <h4>My Trip</h4>
-              <div><img src="" alt=""></div>
+            <div class="column myTrip col-12">
+              <h4 class="planeTitle">My Trip</h4>
+              <div><img class="plane col-12" src="assets/map.jpeg" alt="" height="320px"> </div>
               <div class="tripInfo row">
-                <div><i class="far fa-calendar-alt"></i> 25th May</div>
-                <div>From: Peru</div>
-                <div>To: Mongolia</div>
-                <div>SouthWest Airlines</div>
+                <div><i class="calendarColor far fa-calendar-alt"></i> 25th May</div>
+                <div class="fromColor">From:</div>
+                <div class="city">New York</div>
+                <div class="toColor">To:</div>
+                <div class="city">Mongolia</div>
+                <div class="bottomRightInfo">SouthWest Airlines</div>
               </div>
 
             </div>
-            <div>graph</div>
+            <div class="graph">
+              <table class="inside col-12">
+                <caption>Yearly Analytics</caption>
+                <tbody>
+                  <tr style="height:85%">
+                    <th scope="row">Jan</th>
+                    <td><span>85%</span></td>
+                  </tr>
+                  <tr style="height:45%">
+                    <th scope="row">Feb</th>
+                    <td><span>45%</span></td>
+                  </tr>
+                  <tr style="height:23%">
+                    <th scope="row">Mar</th>
+                    <td><span>23%</span></td>
+                  </tr>
+                  <tr style="height:7%">
+                    <th scope="row">Apr</th>
+                    <td><span>7%</span></td>
+                  </tr>
+                  <tr style="height:38%">
+                    <th scope="row">May</th>
+                    <td><span>38%</span></td>
+                  </tr>
+                  <tr style="height:35%">
+                    <th scope="row">Jun</th>
+                    <td><span>35%</span></td>
+                  </tr>
+                  <tr style="height:30%">
+                    <th scope="row">Jul</th>
+                    <td><span>30%</span></td>
+                  </tr>
+                  <tr style="height:5%">
+                    <th scope="row">Aug</th>
+                    <td><span>5%</span></td>
+                  </tr>
+                  <tr style="height:20%">
+                    <th scope="row">Sep</th>
+                    <td><span>20%</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           <div class="rightSide col-3 column">
             <h4 class="tripTitle">Upcoming Trip</h4>
             <div class="rightBody row">
-              <div>img</div>
+              <div><img class="border" src="assets/france.jpg" alt="" height="80px" width="80px"></div>
               <div class="column">
                 <div>France</div>
                 <div>25 May - 30 May</div>
               </div>
-              <div>...</div>
+              <div class="rightMargin">&#8942;</div>
             </div>
 
             <div class="rightBody row">
-              <div>img</div>
+              <div><img class="border" src="assets/italy.jpg" alt="" height="80px" width="80px"></div>
               <div class="column">
                 <div>Italy</div>
                 <div>10 Jun - 20 Jun</div>
               </div>
-              <div>...</div>
+              <div class="rightMargin">&#8942;</div>
             </div>
 
             <div class="rightBody row">
-              <div>img</div>
+              <div><img class="border" src="assets/singapore.jpg" alt="" height="80px" width="80px"></div>
               <div class="column">
                 <div>Singapore</div>
                 <div>20 Aug - 30 Aug</div>
               </div>
-              <div>...</div>
+              <div class="rightMargin">&#8942;</div>
             </div>
 
             <div class="rightBody row">
-              <div>img</div>
+              <div><img class="border" src="assets/malaysia.jpg" alt="" height="80px" width="80px"></div>
               <div class="column">
                 <div>Malaysia</div>
                 <div>15 Sep - 20 May</div>
               </div>
-              <div>...</div>
+              <div class="rightMargin">&#8942;</div>
             </div>
 
             <h4 class="middleTitle">Activity</h4>
+            <div class="row iconCenterVer">
+              <div class="purpleBackground "><i class="colorWhite fas fa-plus"></i></div>
+              <div class="column">
+                <div class=" boldText">Activity Timeline</div>
+                <div class="emailColor">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+            <div class="row iconCenterVer">
+              <div class=""><i class="orange fas fa-info-circle"></i></div>
+              <div class="column">
+                <div class=" boldText">Email Newsletter</div>
+                <div class="emailColor">consectetur adipiscing elit</div>
+              </div>
+            </div>
+            <div class="row iconCenterVer">
+              <div class="redBackground "><i class="colorWhite fas fa-check"></i></div>
+              <div class="column">
+                <div class=" boldText">Plan Webinar</div>
+                <div class="emailColor">Nunc tempor pretium nisl</div>
+              </div>
+            </div>
+            <div class="row iconCenterVer">
+              <div class="greenBackground "><i class="colorWhite fas fa-check"></i></div>
+              <div class="column">
+                <div class=" boldText">Launch Website</div>
+                <div class="emailColor">Mauris ut sem interdum</div>
+              </div>
+            </div>
+            <div class="row iconCenterVer">
+              <div class="purpleBackground "><i class="colorWhite fas fa-plus"></i></div>
+              <div class="column">
+                <div class=" boldText">Marketing</div>
+                <div class="emailColor">justo cursus odio venenatis, a</div>
+              </div>
+            </div>
+            <div class="row iconCenterVer">
+              <div class="orangeBackground "><i class="colorWhite fas fa-plus"></i></div>
+              <div class="column">
+                <div class=" boldText">Activity Timeline</div>
+                <div class="emailColor">Aliquam lobortis libero velit</div>
+              </div>
+            </div>
           </div>
 
         </div>
