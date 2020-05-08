@@ -466,3 +466,11 @@ body{
 .city{
   margin-left: -30px;
 }
+
+.greenDot {
+  background-color: lightgreen;
+  color: white;
+  height: 20px;
+  width: 30px;
+  border-radius: 50px ;
+}
